@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
   <header>
     <nav class="navbar bg-fondoHeader navbar-expand-md">
@@ -52,120 +53,157 @@
 
   <main>
 
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Ingrese Localidad:" aria-label="Buscar localidad"
-        aria-describedby="button-addon">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon">Buscar</button>
-    </div>
+    <section>
+      <h1>Buscar por Localidad</h1>
+      <p>En un futuro se agregará esta funcionalidad. De esta manera, por ejemplo al buscar
+        por "La Cumbrecita" aparecerán todos los Destinos Populares correspondientes a dicha Localidad.</p>
+    
+      <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Ingrese Localidad:" aria-label="Buscar localidad"
+            aria-describedby="button-addon">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon">Buscar</button>
+      </div>
 
-    <section class="pseudo">
-
-      <article class="box">
-        <div class="box-img"><img src="../assets/images/Balneario Cabalango - Cabalango.jpg"> alt="Balneario Cabalango">
-        </div>
-        <div class="box-content">
-          <h2>Balneario Cabalango - Cabalango</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, odio voluptatum modi, deleniti
-            dolores harum velit pariatur facilis voluptas sequi vero ipsam reiciendis vitae mollitia iusto
-            reprehenderit quaerat, quos repudiandae!</p>
-          <a href="">Ver mas</a>
+      <div class="fixed-bottom mb-3 d-flex justify-content-end">
+        <a href="../index.html"><button class="btn btn-primary">Volver</button></a>
+      </div>
+    
+      <article id="cascadaGrande" class="container">
+        <div class="row paddingTB border">
+          <div class="col-lg-6 col-xs-12">
+            <div id="carousel">
+              <div id="carouselDest1" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/images/cascadaGrande_LaCumbrecita.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/images/masFotos/cascadaGrandeLC1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/images/masFotos/cascadaGrandeLC2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDest1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDest1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xs-12">
+            <h2 class="animate__animated animate__zoomInDown">Cascada Grande - La Cumbrecita</h2>
+            <p>El Sendero Cascada Grande es una senda escalonada en ascenso, dentro del bosque de pinos. Tiene una
+              extensión de 500 mts. y un desnivel positivo de 30 mts. para llegar a la vista frontal de la cascada.
+              Se requiere buen calzado y agua. Es una linda aventura cerca del centro de La Cumbrecita y requiere de una
+              caminata de unos 15 minutos por
+              un sendero que trepa la sierra y permite ver hermosos paisajes. Es un lugar ideal para sentarse a descansar o
+              darse un baño.
+            </p>
+            <div id="mapa-centrado">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13549.285502742334!2d-64.78314810807916!3d-31.897864417177082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2cb22ee24bc3f%3A0x9455570e961749c!2sLa%20Cumbrecita%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1708309625861!5m2!1ses-419!2sar"
+                loading="lazy" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+      </article>
+    
+      <article id="laOllaLC" class="container">
+        <div class="row paddingTB border">
+          <div class="col-lg-6 col-xs-12">
+            <div id="carousel">
+              <div id="carouselDest2" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/images/laOlla_LaCumbrecita.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/images/laOlla_LaCumbrecita.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/images/laOlla_LaCumbrecita.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDest2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDest2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xs-12">
+            <h2 class="animate__animated animate__zoomInDown">La Olla - La Cumbrecita</h2>
+            <p>Uno de los rincones más visitados del arroyo Almbach. Se encuentra en uno de los extremos de La Cumbrecita
+              y es uno de los lugares predilectos durante los días de verano. El cauce de agua que baja de la sierra,
+              va generando a su paso lugares únicos desde donde disfrutar la naturaleza en estado puro. La Olla es uno
+              de estos lugares. En medio de un frondoso bosque de coníferas se encuentra este salto de agua que se desliza
+              por las rocas y cae en una profunda pileta natural de más de 6 mts de profundidad.
+            </p>
+            <div id="mapa-centrado">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13549.285502742334!2d-64.78314810807916!3d-31.897864417177082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2cb22ee24bc3f%3A0x9455570e961749c!2sLa%20Cumbrecita%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1708309625861!5m2!1ses-419!2sar"
+                loading="lazy" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
         </div>
       </article>
-
-      <article class="box">
-        <div class="box-img"><img src="../assets/images/Balneario el Aguacero- Los Reartes .jpg"
-            alt="Balneario El Aguacero"></div>
-        <div class="box-content">
-          <h2 class="box-content-title">Balneario El Aguacero - Los Rearte</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, odio voluptatum modi, deleniti
-            dolores harum velit pariatur facilis voluptas sequi vero ipsam reiciendis vitae mollitia iusto
-            reprehenderit quaerat, quos repudiandae!</p>
-          <a href="">Ver mas</a>
+    
+      <article id="medioLC" class="container">
+        <div class="row paddingTB border">
+          <div class="col-lg-6 col-xs-12">
+            <div id="carousel">
+              <div id="carouselDest3" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/images/rioDelMedio_LaCumbrecita.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/images/rioDelMedio_LaCumbrecita.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/images/rioDelMedio_LaCumbrecita.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDest3" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDest3" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xs-12">
+            <h2 class="animate__animated animate__zoomInDown">Rio del Medio - La Cumbrecita</h2>
+            <p>Atraviesa el pueblo, nace en lo alto de las Sierras Grandes y en su recorrido va formando playas, saltos de
+              agua y remansos
+              El puente que marca el ingreso al centro histórico cruza sobre sus aguas. Ingresando a La Cumbrecita, hacia la
+              izquierda, el río es un poco más profundo y presenta
+              playas y espacios de pasto ideales para disfrutar en el verano y caminar durante todo el año.
+              Hacia la derecha del puente, el río transcurre entre grandes rocas, formando ollas inmersas en la vegetación.
+            </p>
+            <div id="mapa-centrado">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13549.285502742334!2d-64.78314810807916!3d-31.897864417177082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2cb22ee24bc3f%3A0x9455570e961749c!2sLa%20Cumbrecita%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1708309625861!5m2!1ses-419!2sar"
+                loading="lazy" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
         </div>
       </article>
-
-      <article class="box">
-        <div class="box-img"><img src="../assets/images/Balneario sol y rio - Carlos Paz.jpg" alt="Balneario Sol y rio">
-        </div>
-        <div class="box-content">
-          <h2>Balneario Sol y rio - Carlos Paz</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, odio voluptatum modi, deleniti
-            dolores harum velit pariatur facilis voluptas sequi vero ipsam reiciendis vitae mollitia iusto
-            reprehenderit quaerat, quos repudiandae!</p>
-          <a href="">Ver mas</a>
-        </div>
-      </article>
-
-      <article class="box">
-        <div class="box-img"><img src="../assets/images/Los Cajones del Durazno, El durazno- Villa Yacanto.jpg">
-          alt="Los Cajones del Durazno">
-        </div>
-        <div class="box-content">
-          <h2>Los Cajones del Durazno - El Durazno</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, odio voluptatum modi, deleniti
-            dolores harum velit pariatur facilis voluptas sequi vero ipsam reiciendis vitae mollitia iusto
-            reprehenderit quaerat, quos repudiandae!</p>
-          <a href="">Ver mas</a>
-        </div>
-      </article>
-
-      <article class="box">
-        <div class="box-img"><img src="../assets/images/Playa chic- Almafuerte.jpg" alt="Playa Chic"></div>
-        <div class="box-content">
-          <h2>Playa Chic - Almafuerte</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, odio voluptatum modi, deleniti
-            dolores harum velit pariatur facilis voluptas sequi vero ipsam reiciendis vitae mollitia iusto
-            reprehenderit quaerat, quos repudiandae!</p>
-          <a href="">Ver mas</a>
-        </div>
-      </article>
-
-      <article class="box">
-        <div class="box-img"><img src="../assets/images/Playa Miami- Santa Rosa.jpg" alt="Playa Miami"></div>
-        <div class="box-content">
-          <h2>Playa Miami - Santa Rosa</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, odio voluptatum modi, deleniti
-            dolores harum velit pariatur facilis voluptas sequi vero ipsam reiciendis vitae mollitia iusto
-            reprehenderit quaerat, quos repudiandae!</p>
-          <a href="">Ver mas</a>
-        </div>
-
-      </article>
-      <article class="box">
-        <div class="box-img"><img src="../assets/images/Playas de oro - Carlos Paz.jpg" alt="Playas de Oro"></div>
-        <div class="box-content">
-          <h2>Playas de Oro - Carloz Paz</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, odio voluptatum modi, deleniti
-            dolores harum velit pariatur facilis voluptas sequi vero ipsam reiciendis vitae mollitia iusto
-            reprehenderit quaerat, quos repudiandae!</p>
-          <a href="">Ver mas</a>
-        </div>
-      </article>
-
-      <article class="box">
-        <div class="box-img"><img src="../assets/images/Puchiqui - Santa Rosa.jpg" alt="Puchuqui"></div>
-        <div class="box-content">
-          <h2>Puchuqui - Santa Rosa</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, odio voluptatum modi, deleniti
-            dolores harum velit pariatur facilis voluptas sequi vero ipsam reiciendis vitae mollitia iusto
-            reprehenderit quaerat, quos repudiandae!</p>
-          <a href="">Ver mas</a>
-        </div>
-      </article>
-
-      <article class="box">
-        <div class="box-img"><img src="../assets/images/Sendero Yucac- Capilla Vieja .jpg" alt="Sendero Yucac"></div>
-        <div class="box-content">
-          <h2>Sendero Yucac - Capilla Vieja</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, odio voluptatum modi, deleniti
-            dolores harum velit pariatur facilis voluptas sequi vero ipsam reiciendis vitae mollitia iusto
-            reprehenderit quaerat, quos repudiandae!</p>
-          <a href="">Ver mas</a>
-        </div>
-      </article>
-
     </section>
-  </main>
+    
+    </main>
+
   <footer>
     <div class="card-footer">
       <div>Seguinos</div>

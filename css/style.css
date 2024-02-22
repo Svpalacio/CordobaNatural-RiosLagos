@@ -3,149 +3,169 @@
     margin: 0;
     box-sizing: border-box;
   }
-
-.navbar bg-fondoHeader navbar-expand-md .navbar-brand {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
   
 .bg-fondoHeader{
-    background-color: rgb(137, 207, 224);
+  background-color: #007eb5; 
 }
+
+.container-fluid{
+  height: 150px;
+} 
+
+div ul{
+  width: 50px; height: 50px;
+  transition: height 2s;
+}
+
+div ul:hover {
+  height: 100px;height: 100px;
+}  
 
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-style: italic;
   font-weight: bold;
-  padding: 20px;
-  color: rgb(9, 30, 51);
-}
+  padding: 5px;
+  color: rgb(33, 154, 179);
+ }
 
-h5, p {
+ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   font-style: italic;
   font-weight: bold;
-  color: rgb(9, 30, 51)
+  padding: 5px;
+  color: rgb(243, 246, 247);
+ }
 
+
+
+p {
+  margin-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(2, 61, 119);  
+  text-align: justify;
 }
 
-.navbar-nav .nav-link:hover {
+.navbar-nav:hover .nav-link:hover {
   background-color: rgb(222, 244, 247);
-  color:blue
+  color:blue;
 }
 
 .nav-link {
-  color:blue;
+  color:rgb(219, 219, 243);
   margin: 10px;
-}
+ }
 
 .navbar-nav .nav-link.active{
-  color: blue;
+  color:rgb(219, 219, 243);
 }
 
+
 main{
-  background-color: rgb(195, 240, 252);
+  background-color: rgb(227, 242, 247);
   color: blue;
+  padding-top: 3px;
+  padding-bottom: 1px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 .navbar-brand img {
-    width: 150px; /* Ancho deseado en píxeles */
-    height: auto; /* Altura automática para mantener la proporción */
+    width: 150px; 
+    height: 150px;
   }
+  
+.col-lg-6.col-xs-12 {
+    padding: 12px;
+}
+/* 
+#carouselExample.carousel.slide{
+  margin: 1px 300px 0px 300px;
+}  */
 
-.container{
-  padding-top: 15px;
-  display: flex;
-  justify-content: space-around;
+@media (max-width: 600px){
+  #carouselExample.carousel.slide{
+   margin:0px;
+  }
+  } 
+
+#carouselDest.carousel.slide{
+  margin: 0px 0px;
 }
 
-.carousel slide{
-  margin-top: 15px;
+.carousel-inner{
+  border-radius: 2%;
 }
 
-.w-100{
-  width: 80%!important;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #62aee0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%; 
 }
 
-.carousel-item img {
-  width: 400px; 
-  height: 400px;
+.carousel-item img { 
+  height: 370px;
   object-fit: cover;
+  border-radius: 2%;  
 }
 
+/* .carouselDest .carousel-item img {
+  height: 450px;  
+  object-fit: cover;
+  border-radius: 2%;
+} */
+
+#mapa-centrado {
+  margin: 0 auto;
+  text-align: center;
+}
+
+iframe{
+  width: 100px;
+  height: 100px;
+}
+
+.video-iframe {
+  width: 220px;
+  height: 220px;
+}
+
+
+
+#carousel-1 .carousel{
+  margin: 0px 0px;
+}
+
+a {
+  text-decoration: none;
+}
 
 .card-footer{
-  margin-top: 10px;
+  margin-top: 0px;
   text-decoration: none;
-  background-color: rgb(137, 207, 224);;
+  background-image: linear-gradient(to right,#62aee0, #007eb5);
   color:blue;
   display: flex;
   justify-content: space-around;
-
+  height: 25px;
 }
 
-.pseudo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  gap: 30px;
+.card-footer p{
+font-size: 12px;
 }
 
-.box {
-  width: 70%;
-  background-color: #1111;
-  padding: 15px;
-  border: 2px solid #111;
-  display: flex;
-  gap: 15px;
-  transition: 0.5s;
-}
-
-.box-img {
-  width: 50%;
-  height: 300px;
-  overflow: hidden;
-}
-
-.box-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 15px;
-  width: 50%;
-}
-
-.box-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.box-content a {
-  align-self: flex-end;
-  background-color: transparent;
-  border: 2px solid #111;
-  color: #111;
-  padding: 10px;
-  transition: 0.2s;
-}
-
-.box:nth-child(even) a {
-  align-self: flex-start;
-}
-
-.box-content a:hover {
-  background-color:  rgb(222, 244, 247);
-  color: rgb(35, 14, 155);
-}
-
-.box:hover {
-  background-color: rgb(132, 209, 203);
-  box-shadow: 3px 3px 13px 5px #11111129;
+.row.paddingTB.border{
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
 }
 
 input.form-control{
@@ -159,3 +179,13 @@ button#button-addon.btn.btn-outline-secondary{
 }
 
 
+div.row.paddingTB.border{
+  margin:0;
+}
+
+.container {
+  background-image: linear-gradient(to right, #007eb5, #92c9ee);
+  margin: 50px,auto;
+  padding: 0px;
+  border-radius: 2%;
+}
