@@ -373,12 +373,12 @@ div.row.paddingTB.border {
 @media (max-width:600px)  {
 
 body h1 {
-    font-size: 19px;
+    font-size: 18px;
     margin: 0px 1px 0px 1px;
   }
 
 body p{
-    font-size: 18px;
+    font-size: 17px;
   }
 
 .destinos h1{
@@ -415,11 +415,11 @@ body p{
   
   .localidades p{
     font-family: sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 18px;
+    font-size: 17px;
     font-style: italic;
     color:  #044764;
     text-align: justify;
-    margin: 12px;
+    margin: 15px;
   }
 
   .localidades h2{
