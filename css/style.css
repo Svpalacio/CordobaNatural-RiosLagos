@@ -394,12 +394,12 @@ footer p{
 @media (min-width:376px) AND (max-width:600px)  {
 
 body h1 {
-    font-size: 24px;
+    font-size: 22px;
     margin: 10px 5px 40px 5px;
   }
 
 body p{
-    font-size: 22px;
+    font-size: 21px;
   }
 
 .destinos h1{
@@ -428,14 +428,14 @@ body p{
   }
   
   .localidades h1{
-   font-size: 24px;
+   font-size: 22px;
    }
   
    .localidades p{
     font-family: sans-serif, Verdana, Geneva, Tahoma;
     font-style: italic;
     text-align: justify;
-    font-size: 22px;
+    font-size: 20px;
     padding: 0px 5px;
   }
   
