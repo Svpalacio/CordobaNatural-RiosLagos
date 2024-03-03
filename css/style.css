@@ -394,12 +394,12 @@ footer p{
 @media (min-width:376px) AND (max-width:600px)  {
 
 body h1 {
-    font-size: 22px;
-    margin: 10px 5px 40px 5px;
+    font-size: 21px;
+    margin: 10px 5px 30px 5px;
   }
 
 body p{
-    font-size: 21px;
+    font-size: 20px;
   }
 
 .destinos h1{
@@ -428,14 +428,14 @@ body p{
   }
   
   .localidades h1{
-   font-size: 22px;
+   font-size: 21px;
    }
   
    .localidades p{
     font-family: sans-serif, Verdana, Geneva, Tahoma;
     font-style: italic;
     text-align: justify;
-    font-size: 20px;
+    font-size: 19px;
     padding: 0px 5px;
   }
   
@@ -443,7 +443,10 @@ body p{
     font-size: 22px;
    }
   
-   
+  .form-control{
+    font-size: 20px;
+  } 
+
   main .nosotros {
     padding: 0px;
     margin-top: 1px 0px;
