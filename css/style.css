@@ -370,44 +370,23 @@ div.row.paddingTB.border {
 }
 
 
-@media (max-width: 375px) AND (max-height:950px)  {
-body h1 {
-  font-size: 17px;
-  padding: 1px;
-}
-body p {
-  font-size: 15px;
-  padding: 0px;
-  margin: 0px;
-}
-.col-lg-6.col-xs-12{
-  padding: 6px 10px 6px 10px; 
-
-}
-
-footer p{
-     font-size: 10px;
- }
-}
-
-
-@media (min-width:376px) AND (max-width:600px)  {
+@media (max-width:600px)  {
 
 body h1 {
-    font-size: 21px;
-    margin: 10px 4px 30px 3px;
+    font-size: 19px;
+    margin: 0px 1px 0px 1px;
   }
 
 body p{
-    font-size: 20px;
+    font-size: 18px;
   }
 
 .destinos h1{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .destinos h2{
-    font-size: 22px;
+    font-size: 18px;
   }
   
 .destinos p{
@@ -440,10 +419,11 @@ body p{
     font-style: italic;
     color:  #044764;
     text-align: justify;
+    margin: 12px;
   }
 
   .localidades h2{
-    font-size: 22px;
+    font-size: 20px;
    }
   
   .form-control{
