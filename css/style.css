@@ -13,20 +13,20 @@ html, body {
 
 body {
   background-color: #93c6db;
-  
+    
 }
 
 
-body h1{
+main h1{
     font-family: sans-serif, Verdana, Geneva, Tahoma;
-    /* font-size: 24px;  */
+    font-size: 25px; 
     font-style: italic;
     padding: 15px;
     color: blanchedalmond;  
     text-align: justify;
   }
   
-body p{
+main p{
     font-family: sans-serif, Verdana, Geneva, Tahoma;
     font-size: 20px;
     font-style: italic;
@@ -96,12 +96,17 @@ body p{
 }
 
 
+
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-}
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+  font-size: 15px;
+  font-style: italic;
+  color: blanchedalmond
+ }
 
 footer .container {
   display: flex;
@@ -115,13 +120,10 @@ footer .localidades{
   margin-top: 10px;
 }
 
-footer p{
-  font-family: sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 15px;
-    font-style: italic;
-    color: blanchedalmond
-}
-
+footer .destinos{
+  position: sticky;
+  margin-top: 10px;
+ }
 
 main section{
   display: flex;
@@ -252,8 +254,7 @@ main .localidades {
 }
 
 .col-lg-6.col-xs-12 {
-  padding: 12px 30px; 
-   padding: 12px 30px; 
+  padding: 12px 30px 0px 30px; 
 }
 
 .col-lg-6.col-xs-12 .comentario{
@@ -369,40 +370,109 @@ div.row.paddingTB.border {
 }
 
 
-@media (min-width: 600px) {
+@media (max-width: 375px) AND (max-height:950px)  {
 body h1 {
-  font-size: 24px;
+  font-size: 17px;
+  padding: 1px;
 }
+body p {
+  font-size: 15px;
+  padding: 0px;
+  margin: 0px;
+}
+.col-lg-6.col-xs-12{
+  padding: 6px 10px 6px 10px; 
+
 }
 
-@media (min-width: 600px) and (max-width: 992px) {
 footer p{
-  font-family: sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 10px;
-    font-style: italic;
-    color: blanchedalmond
-}
+     font-size: 10px;
+ }
 }
 
 
-@media (max-width: 600px) {
+@media (min-width:376px) AND (max-width:600px)  {
 
 body h1 {
-    font-size: 15px;
+    font-size: 22px;
+    margin: 10px 5px 40px 5px;
   }
 
 body p{
-    font-size: 12px;
+    font-size: 20px;
   }
 
+.destinos h1{
+    font-size: 20px;
+}
+
 .destinos h2{
-    font-size: 15px;
+    font-size: 20px;
   }
   
 .destinos p{
-   font-size: 12px;
+   font-size: 20px;
   }
   
+  main .destinos {
+    padding: 0px;
+    margin-top: 1px 0px;
+  }
+   
+  main .localidades {
+    padding: 0px;
+    margin-top: 1px 0px;
+    display: flex;
+    align-items: center;
+    display: flex;
+  }
+  
+  .localidades h1{
+   font-size: 20px;
+   }
+  
+   .localidades p{
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-style: italic;
+    text-align: justify;
+    font-size: 20px;
+    padding: 0px 5px;
+  }
+  
+  .localidades h2{
+    font-size: 20px;
+   }
+  
+   
+  main .nosotros {
+    padding: 0px;
+    margin-top: 1px 0px;
+    display: flex;
+    align-items: center;
+    display: flex;
+  }
+  
+  .nosotros h1{
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-size: 20px;
+    font-style: italic;
+   color: #044764; 
+   }
+  
+   .nosotros p{
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-style: italic;
+    text-align: justify;
+    font-size: 19px;
+    padding: 0px 5px 20px 5px;
+  }
+  
+  
+  .preguntas{
+    font-size: 15px ;
+    margin: 0px 15px;
+  }
+
 .offcanvas{
     max-width: 60%; 
 
@@ -450,6 +520,7 @@ body p{
 
   .col-lg-6.col-xs-12 {
     height: 100%;
+    padding: 12px 30px 0px 30px; 
 }
 
 .container {
@@ -462,85 +533,6 @@ body p{
   max-height: 100%;
 }
 
-main .destinos {
-  padding: 0px;
-  margin-top: 1px 0px;
-}
-
-.destinos h1{
-  font-family: sans-serif, Verdana, Geneva, Tahoma;
-  font-size: 15px;
-  font-style: italic;
-  color: #044764; 
- }
-
- .destinos p{
-  font-family: sans-serif, Verdana, Geneva, Tahoma;
-  font-style: italic;
-  text-align: justify;
-  font-size: 10px;
-}
-
-main .localidades {
-  padding: 0px;
-  margin-top: 1px 0px;
-  display: flex;
-  align-items: center;
-  display: flex;
-}
-
-.localidades h1{
-  font-family: sans-serif, Verdana, Geneva, Tahoma;
-  font-size: 15px;
-  font-style: italic;
- color: #044764; 
- }
-
- .localidades p{
-  font-family: sans-serif, Verdana, Geneva, Tahoma;
-  font-style: italic;
-  text-align: justify;
-  font-size: 10px;
-  padding: 0px 5px;
-}
-
-.localidades h2{
-  font-family: sans-serif, Verdana, Geneva, Tahoma;
-  font-size: 12px;
-  font-style: italic;
- color: #044764; 
- }
-
- 
-main .nosotros {
-  padding: 0px;
-  margin-top: 1px 0px;
-  display: flex;
-  align-items: center;
-  display: flex;
-}
-
-.nosotros h1{
-  font-family: sans-serif, Verdana, Geneva, Tahoma;
-  font-size: 15px;
-  font-style: italic;
- color: #044764; 
- }
-
- .nosotros p{
-  font-family: sans-serif, Verdana, Geneva, Tahoma;
-  font-style: italic;
-  text-align: justify;
-  font-size: 10px;
-  padding: 0px 5px;
-}
-
-
-.preguntas{
-  font-size: 15px ;
-  margin: 0px 15px;
-}
-
 .btn-outline-secondary {
   font-size: 8px;
   padding: 1px;
@@ -551,9 +543,20 @@ main .nosotros {
   padding: 1px;
 }
 
+footer .localidades{
+  position: sticky;
+  margin-top: 10px;
+}
+
+
+footer .destinos{
+  position: sticky;
+  margin-top: 10px;
+}
+
 footer p{
   font-family: sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 8px;
+    font-size: 10px;
     font-style: italic;
     color: blanchedalmond
 }
