@@ -1,0 +1,39 @@
+main .destinos {
+    padding-top: 3px;
+    padding-bottom: 50px;
+    margin-top: 3px;
+    margin-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+
+.destinos h1 {
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-size: 25px;
+    font-style: italic;
+    color: $letraAzulOscuro;
+}
+
+.destinos p {
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-size: 16px;
+    font-style: italic;
+    text-align: justify;
+    color: $letraAzulOscuro;
+}
+
+
+div.row.paddingTB.border {
+    margin: 0;
+}
+#mapa-centrado {
+    margin: 0 auto;
+    text-align: center;
+}
+  
+iframe {
+    width: 100px;
+    height: 100px;
+  }
+

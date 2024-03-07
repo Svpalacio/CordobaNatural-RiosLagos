@@ -1,0 +1,27 @@
+.navbar {
+    padding: 0px;
+}
+
+.navbar-nav:hover .nav-link:hover {
+    background-color: $backCeleste;
+    color: $letraAzul;
+}
+
+.nav-link {
+    color: $backCeleste;
+    margin: 10px;
+}
+
+.navbar-nav .nav-link.active {
+    color: $backCeleste;
+}
+
+
+.navbar-brand img {
+    width: 150px;
+    height: 150px;
+}
+
+.col-lg-6.col-xs-12 {
+    padding: 12px 30px 0px 30px;
+}

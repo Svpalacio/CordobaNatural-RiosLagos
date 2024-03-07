@@ -1,0 +1,11 @@
+{
+  "name": "preentrega3-soledadpalacio",
+  "version": "1.0.0",
+  "description": "Este proyecto web sobre ríos y lagos de Córdoba,  está pensado como guía para ubicar fácilmente esos destinos maravillosos y cercanos al lugar que decidamos visitar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

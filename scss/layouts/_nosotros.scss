@@ -1,0 +1,21 @@
+.nosotros h1 {
+    padding: 20px;
+    color: $letraAzulOscuro;
+    text-align: justify;
+}
+
+.nosotros p {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    padding-left: 17px;
+    color: $letraBlanca;
+    text-align: justify;
+}
+
+.video-iframe {
+    width: 300px;
+    height: 300px;
+  }

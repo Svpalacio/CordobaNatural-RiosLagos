@@ -1,0 +1,177 @@
+@media (max-width:600px) {
+
+    body h1 {
+        font-size: 18px;
+        margin: 0px 1px 0px 1px;
+    }
+
+    body p {
+        font-size: 17px;
+    }
+
+    .destinos h1 {
+        font-size: 20px;
+    }
+
+    .destinos h2 {
+        font-size: 18px;
+    }
+
+    .destinos p {
+        font-size: 20px;
+    }
+
+    main .destinos {
+        padding: 0px;
+        margin-top: 1px 0px;
+    }
+
+    main .localidades {
+        padding: 0px;
+        margin-top: 1px 0px;
+        display: flex;
+        align-items: center;
+        display: flex;
+    }
+
+    .localidades h1 {
+        font-family: sans-serif, Verdana, Geneva, Tahoma;
+        font-size: 18px;
+        font-style: italic;
+        color: $letraAzulOscuro;
+    }
+
+    .localidades p {
+        font-family: sans-serif, Verdana, Geneva, Tahoma;
+        font-size: 17px;
+        font-style: italic;
+        color: $letraAzulOscuro;
+        text-align: justify;
+        margin: 15px;
+    }
+
+    .localidades h2 {
+        font-size: 20px;
+    }
+
+    .form-control {
+        font-size: 20px;
+    }
+
+    main .nosotros {
+        padding: 0px;
+        margin-top: 1px 0px;
+        display: flex;
+        align-items: center;
+        display: flex;
+    }
+
+    .nosotros h1 {
+        font-family: sans-serif, Verdana, Geneva, Tahoma;
+        font-size: 24px;
+        font-style: italic;
+        color: $letraAzulOscuro;
+    }
+
+    .nosotros p {
+        font-family: sans-serif, Verdana, Geneva, Tahoma;
+        font-style: italic;
+        text-align: justify;
+        font-size: 20px;
+        padding: 0px 5px 20px 5px;
+    }
+
+
+    .preguntas {
+        font-size: 18px;
+        margin: 0px 15px;
+    }
+
+    .offcanvas {
+        max-width: 60%;
+
+    }
+
+    .offcanvas-header {
+        justify-content: center;
+    }
+
+    .offcanvas-body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+
+    .nav-link {
+        color: $backCeleste;
+        width: 160px;
+        padding-left: 5px;
+        border-radius: 3%;
+    }
+
+
+    .navbar-nav .nav-link.active {
+        padding: 0px 5px;
+        border-radius: 3%;
+    }
+
+    .btn-primary {
+        font-size: 10px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+    #carouselExample.carousel.slide {
+        margin: 1px 5px;
+    }
+
+    .offcanvas-body {
+        height: auto;
+    }
+
+    .col-lg-6.col-xs-12 {
+        height: 100%;
+        padding: 12px 30px 0px 30px;
+    }
+
+    .container {
+        background-image: linear-gradient(to top, $headColor , $backCeleste );
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .btn-outline-secondary {
+        font-size: 8px;
+        padding: 1px;
+    }
+
+    .form-control {
+        font-size: 8px;
+        padding: 1px;
+    }
+
+    footer .localidades {
+        position: sticky;
+        margin-top: 10px;
+    }
+
+
+    footer .destinos {
+        position: sticky;
+        margin-top: 10px;
+    }
+
+    footer p {
+        font-family: sans-serif, Verdana, Geneva, Tahoma;
+        font-size: 10px;
+        font-style: italic;
+        color: $letraBlanca
+    }
+}

@@ -1,0 +1,23 @@
+.accordion {
+    width: 100%;
+    background-color: $mainColor ;
+    margin: 15px;
+}
+
+
+.accordion-item:not(.active) {
+    background-color: $mainColor ;
+}
+
+.accordion-item .accordion-body {
+    background-color: $mainColor;
+}
+
+.accordion-button.collapsed {
+    background-color: $mainColor;
+}
+
+.accordion-body {
+    padding-bottom: 50px;
+    text-align: justify;
+}

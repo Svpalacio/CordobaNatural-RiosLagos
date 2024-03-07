@@ -1,0 +1,27 @@
+main .localidades {
+    color: $letraAzul;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    margin-top: 3px;
+    margin-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+
+.localidades h1 {
+    color: $letraAzulOscuro;
+}
+
+.localidades p {
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+  font-size: 16px;
+  font-style: italic;
+  text-align: justify;
+  color: $letraAzulOscuro;
+}
+
+
+main .localidades{
+margin-bottom: 50px;
+}
