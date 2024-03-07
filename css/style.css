@@ -99,7 +99,7 @@ body {
   background-color: #93c6db;
 }
 
-main h1 {
+main h1.animate__animated {
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -110,14 +110,12 @@ main h1 {
   text-align: justify;
 }
 
-h2 {
-  font-family: "Caveat", cursive;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 25px;
+p.animate__animated {
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+  font-style: italic;
+  font-size: 20px;
   padding: 5px;
-  color: #044764;
+  color: blue;
 }
 
 footer p {
@@ -225,9 +223,20 @@ main .destinos {
 }
 
 .destinos h1 {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  color: #044764;
+  margin-bottom: 20px;
+}
+
+.destinos h2 {
   font-family: sans-serif, Verdana, Geneva, Tahoma;
-  font-size: 25px;
   font-style: italic;
+  font-size: 20px;
+  padding: 5px;
   color: #044764;
 }
 
@@ -254,7 +263,6 @@ iframe {
 }
 
 main .localidades {
-  color: blue;
   padding-top: 3px;
   padding-bottom: 1px;
   margin-top: 3px;
@@ -264,6 +272,20 @@ main .localidades {
 }
 
 .localidades h1 {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  color: #044764;
+  margin-bottom: 20px;
+}
+
+.localidades h2 {
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+  font-style: italic;
+  font-size: 20px;
+  padding: 5px;
   color: #044764;
 }
 
@@ -280,8 +302,13 @@ main .localidades {
 }
 
 .nosotros h1 {
-  padding: 20px;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
   color: #044764;
+  margin-bottom: 20px;
   text-align: justify;
 }
 
@@ -290,8 +317,8 @@ main .localidades {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
-  padding-left: 17px;
+  font-size: 30px;
+  padding: 2px 20px 2px 0px;
   color: blanchedalmond;
   text-align: justify;
 }
@@ -306,8 +333,13 @@ main .localidades {
 }
 
 .preguntas h1 {
-  padding: 20px;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
   color: #044764;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -339,12 +371,12 @@ footer .destinos {
 }
 
 @media (max-width: 600px) {
-  body h1 {
-    font-size: 18px;
-    margin: 0px 1px 0px 1px;
+  main h1.animate__animated {
+    font-size: 24px;
+    padding: 0px 2px 0px 2px;
   }
-  body p {
-    font-size: 17px;
+  p.animate__animated {
+    font-size: 15px;
   }
   .destinos h1 {
     font-size: 20px;

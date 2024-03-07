@@ -1,5 +1,4 @@
 main .localidades {
-    color: $letraAzul;
     padding-top: 3px;
     padding-bottom: 1px;
     margin-top: 3px;
@@ -10,8 +9,23 @@ main .localidades {
 
 
 .localidades h1 {
-    color: $letraAzulOscuro;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  color: $letraAzulOscuro;
+  margin-bottom: 20px;
 }
+
+.localidades h2{
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+  font-style: italic;
+  font-size: 20px;
+  padding: 5px;
+  color: $letraAzulOscuro;
+}
+
 
 .localidades p {
   font-family: sans-serif, Verdana, Geneva, Tahoma;

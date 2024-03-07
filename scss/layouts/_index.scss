@@ -9,7 +9,7 @@ body {
 
 }
 
-main h1 {
+main h1.animate__animated {
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -20,14 +20,12 @@ main h1 {
     text-align: justify;
 }
 
-h2 {
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 25px;
+p.animate__animated{
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-style: italic;
+    font-size: 20px;
     padding: 5px;
-    color: $letraAzulOscuro;
+    color: $letraAzul;
 }
 
 footer p {

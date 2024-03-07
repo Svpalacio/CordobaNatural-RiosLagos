@@ -1,12 +1,11 @@
 @media (max-width:600px) {
-
-    body h1 {
-        font-size: 18px;
-        margin: 0px 1px 0px 1px;
+    main h1.animate__animated {
+        font-size: 24px;
+        padding: 0px 2px 0px 2px;
     }
 
-    body p {
-        font-size: 17px;
+    p.animate__animated{
+        font-size: 15px;
     }
 
     .destinos h1 {

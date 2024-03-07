@@ -9,9 +9,20 @@ main .destinos {
 
 
 .destinos h1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    color: $letraAzulOscuro;
+    margin-bottom: 20px;
+}
+
+.destinos h2{
     font-family: sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 25px;
     font-style: italic;
+    font-size: 20px;
+    padding: 5px;
     color: $letraAzulOscuro;
 }
 
