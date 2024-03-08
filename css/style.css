@@ -372,14 +372,15 @@ footer .destinos {
 
 @media (max-width: 600px) {
   main h1.animate__animated {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     font-size: 24px;
-    padding: 0px 2px 0px 2px;
+    padding: 0px 2px 0px 10px;
   }
   p.animate__animated {
     font-size: 15px;
-  }
-  .destinos h1 {
-    font-size: 20px;
   }
   .destinos h2 {
     font-size: 18px;
@@ -398,12 +399,6 @@ footer .destinos {
     align-items: center;
     display: flex;
   }
-  .localidades h1 {
-    font-family: sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 18px;
-    font-style: italic;
-    color: #044764;
-  }
   .localidades p {
     font-family: sans-serif, Verdana, Geneva, Tahoma;
     font-size: 17px;
@@ -416,7 +411,14 @@ footer .destinos {
     font-size: 20px;
   }
   .form-control {
-    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 15px;
+  }
+  .btn-outline-secondary {
+    font-size: 15px;
+    padding: 1px;
   }
   main .nosotros {
     padding: 0px;
@@ -425,18 +427,9 @@ footer .destinos {
     align-items: center;
     display: flex;
   }
-  .nosotros h1 {
-    font-family: sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 24px;
-    font-style: italic;
-    color: #044764;
-  }
   .nosotros p {
-    font-family: sans-serif, Verdana, Geneva, Tahoma;
-    font-style: italic;
-    text-align: justify;
-    font-size: 20px;
-    padding: 0px 5px 20px 5px;
+    font-size: 30px;
+    padding: 0px 0px 5px 0px;
   }
   .preguntas {
     font-size: 18px;
@@ -488,14 +481,6 @@ footer .destinos {
     max-width: 100%;
     max-height: 100%;
   }
-  .btn-outline-secondary {
-    font-size: 8px;
-    padding: 1px;
-  }
-  .form-control {
-    font-size: 8px;
-    padding: 1px;
-  }
   footer .localidades {
     position: sticky;
     margin-top: 10px;
@@ -506,9 +491,11 @@ footer .destinos {
   }
   footer p {
     font-family: sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 10px;
+    font-size: 11px;
     font-style: italic;
     color: blanchedalmond;
+    padding: 10px 1px 5px 1px;
+    height: 40px;
   }
 }
 
