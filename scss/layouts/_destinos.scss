@@ -18,14 +18,6 @@ main .destinos {
     margin-bottom: 20px;
 }
 
-.destinos h2{
-    font-family: sans-serif, Verdana, Geneva, Tahoma;
-    font-style: italic;
-    font-size: 20px;
-    padding: 5px;
-    color: $letraAzulOscuro;
-}
-
 .destinos p {
     font-family: sans-serif, Verdana, Geneva, Tahoma;
     font-size: 16px;
@@ -34,10 +26,6 @@ main .destinos {
     color: $letraAzulOscuro;
 }
 
-
-div.row.paddingTB.border {
-    margin: 0;
-}
 #mapa-centrado {
     margin: 0 auto;
     text-align: center;

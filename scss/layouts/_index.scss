@@ -4,9 +4,33 @@ html body {
     padding: 0;
 }
 
-body {
+body{
     background-color: $mainColor;
 
+}
+
+
+main {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+// .sin-borde {
+//   border: none !important;
+// }
+
+
+div.row.paddingTB {
+    margin: 10px 5px;
 }
 
 main h1.animate__animated {
@@ -17,15 +41,45 @@ main h1.animate__animated {
     font-size: 35px;
     padding: 5px 15px 15px 15px;
     color: $letraBlanca;
-    text-align: justify;
+    text-align: center;
 }
 
-p.animate__animated{
+h2.animate__animated{
     font-family: sans-serif, Verdana, Geneva, Tahoma;
     font-style: italic;
     font-size: 20px;
     padding: 5px;
-    color: $letraAzul;
+    color: $letraBlanca;
+    text-shadow: 2px 2px 2px $headColor, -2px -2px 2px $headColor;
+    
+}
+
+index .col-lg-6.col-xs-12{
+    padding: 12px 30px 12px 30px;
+}
+
+.container {
+    background-image: linear-gradient(to bottom, $headColor , $backCeleste);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer .container{
+    background-image: linear-gradient(to top, $headColor , $backCeleste);
+}
+
+.containerFooter {
+    background-image: linear-gradient(to top, $headColor , $backCeleste);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 footer p {
@@ -36,11 +90,6 @@ footer p {
     color:$letraBlanca;
 }
 
-
-main {
-    padding: 0px;
-    margin: 0px;
-}
 
 
 div ul {
@@ -101,22 +150,6 @@ a {
     align-items: center;
 }
 
-.container {
-    background-image: linear-gradient(to top, $headColor , $backCeleste);
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-main section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .bg-fondoHeader {
     background-color: $headColor;
