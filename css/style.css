@@ -51,7 +51,7 @@
 .carousel-item img {
   height: 370px;
   object-fit: cover;
-  border-radius: 3%;
+  border-radius: 10px;
 }
 
 .carousel-inner.rounded {
@@ -307,10 +307,6 @@ main .localidades {
   color: #044764;
 }
 
-main .localidades {
-  margin-bottom: 50px;
-}
-
 .nosotros h1 {
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
@@ -331,6 +327,10 @@ main .localidades {
   padding: 2px 20px 2px 0px;
   color: white;
   text-align: justify;
+}
+
+.nosotros p.centrado {
+  text-align: center;
 }
 
 .video-iframe {
@@ -466,6 +466,7 @@ footer .destinos {
     justify-content: center;
     flex-direction: column;
     padding: 30px;
+    height: 100%;
   }
   .nav-link {
     color: rgb(171, 236, 245);
@@ -485,12 +486,12 @@ footer .destinos {
   #carouselExample.carousel.slide {
     margin: 1px 5px;
   }
-  .offcanvas-body {
-    height: auto;
-  }
   .col-lg-6.col-xs-12 {
     height: 100%;
     padding: 5px 5px 0px 5px;
+  }
+  .nosotros .col-lg-6.col-xs-12 {
+    margin-bottom: 50px;
   }
   .container {
     margin: 0px;

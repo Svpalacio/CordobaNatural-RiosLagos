@@ -4,7 +4,7 @@ html body {
     padding: 0;
 }
 
-body{
+body {
     background-color: $mainColor;
 
 }
@@ -23,12 +23,6 @@ main section {
     justify-content: center;
 }
 
-
-// .sin-borde {
-//   border: none !important;
-// }
-
-
 div.row.paddingTB {
     margin: 10px 5px;
 }
@@ -44,17 +38,17 @@ main h1.animate__animated {
     text-align: center;
 }
 
-h2.animate__animated{
+h2.animate__animated {
     font-family: sans-serif, Verdana, Geneva, Tahoma;
     font-style: italic;
     font-size: 20px;
     padding: 5px;
     color: $letraBlanca;
     text-shadow: 2px 2px 2px $headColor, -2px -2px 2px $headColor;
-    
+
 }
 
-index .col-lg-6.col-xs-12{
+index .col-lg-6.col-xs-12 {
     padding: 12px 30px 12px 30px;
 }
 
@@ -68,7 +62,7 @@ index .col-lg-6.col-xs-12{
     max-height: 100%;
 }
 
-footer .container{
+footer .container {
     background-image: linear-gradient(to top, $headColor , $backCeleste);
 }
 
@@ -87,7 +81,7 @@ footer p {
     font-size: 16px;
     font-style: italic;
     text-align: justify;
-    color:$letraBlanca;
+    color: $letraBlanca;
 }
 
 

@@ -1,4 +1,5 @@
 @media (max-width:600px) {
+    
     main h1.animate__animated {
         font-family: "Caveat", cursive;
         font-optical-sizing: auto;
@@ -104,8 +105,8 @@
         justify-content: center;
         flex-direction: column;
         padding: 30px;
+        height: 100%;
     }
-
 
     .nav-link {
         color: $backCeleste;
@@ -131,13 +132,13 @@
         margin: 1px 5px;
     }
 
-    .offcanvas-body {
-        height: auto;
-    }
-
     .col-lg-6.col-xs-12 {
         height: 100%;
         padding: 5px 5px 0px 5px;
+    }
+
+    .nosotros .col-lg-6.col-xs-12 {
+        margin-bottom: 50px;
     }
 
     .container {
