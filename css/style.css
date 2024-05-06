@@ -66,7 +66,7 @@
   bottom: 5px;
 }
 
-.accordion {
+.accordion-button {
   width: 100%;
   background-color: #93c6db;
   margin: 15px;
@@ -126,17 +126,58 @@ main h1.animate__animated {
   text-align: center;
 }
 
-h2.animate__animated {
-  font-family: sans-serif, Verdana, Geneva, Tahoma;
+h2 {
+  font-family: "Caveat", cursive;
   font-style: italic;
-  font-size: 20px;
+  font-size: 23px;
   padding: 5px;
-  color: white;
-  text-shadow: 2px 2px 2px #007eb5, -2px -2px 2px #007eb5;
+  color: #044764;
 }
 
 index .col-lg-6.col-xs-12 {
   padding: 12px 30px 12px 30px;
+}
+
+#contenedorLugares {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 55px;
+}
+
+.card {
+  position: relative;
+  left: 0px;
+  width: 300px;
+  height: 300px;
+  background-color: #93c6db;
+  border-radius: 8px;
+  transition: 1000ms all;
+  transform-origin: center left;
+  box-shadow: 0 5px 12px #111;
+  outline: 1px solid rgb(104, 94, 94);
+  overflow: hidden;
+}
+
+.card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+button {
+  background-color: #93c6db;
+  border-radius: none;
+  color: #044764;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
 }
 
 .container {
@@ -151,6 +192,7 @@ index .col-lg-6.col-xs-12 {
 
 footer .container {
   background-image: linear-gradient(to top, #007eb5, rgb(171, 236, 245));
+  margin-top: 40px;
 }
 
 .containerFooter {
@@ -255,6 +297,15 @@ main .destinos {
   margin-bottom: 20px;
 }
 
+h2.animate__animated {
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+  font-style: italic;
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+  text-shadow: 2px 2px 2px #007eb5, -2px -2px 2px #007eb5;
+}
+
 .destinos p {
   font-family: sans-serif, Verdana, Geneva, Tahoma;
   font-size: 16px;
@@ -352,8 +403,15 @@ main .localidades {
   margin-bottom: 20px;
 }
 
+.preguntas h2 {
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+  font-style: italic;
+  font-size: 20px;
+  padding: 5px;
+}
+
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;

@@ -18,6 +18,15 @@ main .destinos {
     margin-bottom: 20px;
 }
 
+h2.animate__animated {
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-style: italic;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    text-shadow: 2px 2px 2px #007eb5, -2px -2px 2px #007eb5;
+}
+
 .destinos p {
     font-family: sans-serif, Verdana, Geneva, Tahoma;
     font-size: 16px;

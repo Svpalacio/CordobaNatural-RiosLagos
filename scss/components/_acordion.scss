@@ -1,9 +1,8 @@
-.accordion {
+.accordion-button{
     width: 100%;
     background-color: $mainColor ;
     margin: 15px;
 }
-
 
 .accordion-item:not(.active) {
     background-color: $mainColor ;
