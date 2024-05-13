@@ -18,22 +18,166 @@ let lugaresRiosYlagos = [
     { id: 16, lugar: "Los Elefantes - Mina Clavero", localidad: "Mina Clavero", descripcion: "Sobre el cauce del río de Los Sauces se encuentran Los Elefantes, donde el agua transita la cuenca cerrada, formando rápidos y profundas ollas (sólo para expertos nadadores). Al final de los cajones, donde la cuenca se abre, surge a ambos costados una formación rocosa que se asemeja a la figura de dos elefantes, de ahí su nombre.", rutaMapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27148.16351430622!2d-65.03184171773222!3d-31.728992491608604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d25d59048c4dd%3A0xa693b3400e45cb6c!2sMina%20Clavero%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1708560319384!5m2!1ses-419!2sar", rutaImagen1: "../assets/images/elefantesMC.jpg", rutaImagen2: "../assets/images/masFotos/elefantesMC1.jpg", rutaImagen3: "../assets/images/masFotos/elefantesMC2.jpg"},
 ]
 
-function crearTarjetasDeLugares(lugares) {
+const obtenerFavoritoLS = () => JSON.parse(localStorage.getItem("favorito")) || []
+
+principal(lugaresRiosYlagos)
+
+function principal(lugares) {
+    renderizarFavorito()
+
+    let botonBuscar = document.getElementById("botonBuscar")
+    botonBuscar.addEventListener("click", () => filtrarYRenderizar(lugares))
+
+    let inputBusqueda = document.getElementById("inputBusqueda")
+    inputBusqueda.addEventListener("keypress", (e) => filtrarYRenderizarEnter(lugares, e))
+
+    /* let botonBuscarPorLocalidad = document.getElementById("botonBuscarPorLocalidad")
+    botonBuscarPorLocalidad.addEventListener("click", () => filtrarYRenderizarPorLocalidad(lugares)) */
+
+    let botonVerOcultar = document.getElementById("botonVerOcultar")
+    botonVerOcultar.addEventListener("click", verOcultar)
+
+    crearTarjetasDeLugares(lugares)
+
+    localStorage.removeItem("favorito")
+    renderizarFavorito([])
+}
+
+function verOcultar(e) {
+    let contenedorFavorito = document.getElementById("contenedorFavorito")
     let contenedorLugares = document.getElementById("contenedorLugares")
 
-    lugares.forEach(lugar => {
+    contenedorFavorito.classList.toggle("oculto")
+    contenedorLugares.classList.toggle("oculto")
+    e.target.innerText = e?.target?.innerText === "VER FAVORITOS" ? "VER LUGARES" : "VER FAVORITOS"
+}
+
+
+function filtrarYRenderizarEnter(lugares, e) {
+    e.keyCode === 13 && crearTarjetasDeLugares(filtrarLugares(lugares))
+}
+
+function filtrarYRenderizar(lugares) {
+    let lugaresFiltrados = filtrarLugares(lugares)
+    crearTarjetasDeLugares(lugaresFiltrados)
+}
+
+
+function filtrarLugares(lugares) {
+    let inputBusqueda = document.getElementById("inputBusqueda")
+    return lugares.filter(lugar => lugar.lugar.includes(inputBusqueda.value) || lugar.localidad.includes(inputBusqueda.value))
+}
+
+function crearTarjetasDeLugares(lugares) {
+    let contenedorLugares = document.getElementById("contenedorLugares")
+    contenedorLugares.innerHTML = ""
+
+    lugares.forEach(({ lugar, id, rutaImagen1 }) => {
         let tarjetaLugar = document.createElement("article")
         tarjetaLugar.className = "card"
         tarjetaLugar.innerHTML = `            
-                   <img src=./images/${lugar.rutaImagen1} />                   
-                   <h2>${lugar.lugar}</h2>                                      
-                   <button> Más información </button>
+                   <img src=./images/${rutaImagen1} />                   
+                   <h2>${lugar}</h2>                                      
+                   <button id=botonLugar${id}>Más información</button>
+                   <button id=botonFavorito${id}>Agregar a Favoritos</button>
+
         `
         contenedorLugares.appendChild(tarjetaLugar)
+        let botonVerLugar = document.getElementById("botonLugar" + id)
+        botonVerLugar.addEventListener("click", (e) => mostrarDescripcion(e, lugares))
+        let botonAgregarAlFavorito = document.getElementById("botonFavorito" + id)
+        botonAgregarAlFavorito.addEventListener("click", (e) => agregarProductoAFavoritos(e, lugares))
+
     });
 }
 
-crearTarjetasDeLugares(lugaresRiosYlagos)
+function agregarProductoAFavoritos(e, lugares) {
+    let favorito = obtenerFavoritoLS()
+    let idDelProducto = Number(e.target.id.substring(12))
+     console.log("id del producto: "+ idDelProducto)
+    let productoBuscado = lugares.findIndex(lugar => lugar.id === idDelProducto)
+    console.log("productoBuscado: "+productoBuscado)
+    favorito.push({
+        id: productoBuscado.id,
+        lugar: productoBuscado.lugar,
+        localidad: productoBuscado.localidad,
+        descripcion: productoBuscado.descripcion,
+        rutaImagen1: productoBuscado.rutaImagen1,
+        rutaImagen2: productoBuscado.rutaImagen2,
+        rutaImagen3: productoBuscado.rutaImagen3,
+        rutaMapa: productoBuscado.rutaMapa
+    })
+
+    localStorage.setItem("favorito", JSON.stringify(favorito))
+    renderizarFavorito()
+}
+
+
+function renderizarFavorito() {
+    let favorito = obtenerFavoritoLS()
+    let contenedorFavorito = document.getElementById("contenedorFavorito")
+    contenedorFavorito.innerHTML = ""
+
+    favorito.forEach(producto => {
+        let tarjetaProductoFavorito = document.createElement("div")
+        tarjetaProductoFavorito.className = "tarjetaProductoFavorito"
+
+        tarjetaProductoFavorito.innerHTML = `
+            <p>${producto.lugar}</p>
+            <p>${producto.descripcion}</p>             
+        `
+        contenedorFavorito.appendChild(tarjetaProductoFavorito)
+    })
+}
+
+
+function filtrarYRenderizarPorLocalidad(lugares) {
+    let lugaresFiltrados = filtrarLugares(lugares)
+    crearTarjetasDeLugares(lugaresFiltrados)
+}
+
+
+function mostrarDescripcion(e, lugares) {
+    let lugarBuscado = lugares.findIndex(lug => lug.id === Number(e.target.id.substring(10)))
+    const verLugar = lugares[lugarBuscado].lugar
+    const verDescripcion = lugares[lugarBuscado].descripcion
+    const verFoto1 = lugares[lugarBuscado].rutaImagen1
+    const re = /\.\.\//g;
+    // Elimina todas las ocurrencias de "../"
+    const rutaSinPuntos = verFoto1.replace(re, "");
+    Swal.fire({
+        html: `
+          <div id="contenedorAlert">
+            <div class="cardAlert">
+                <img src="${rutaSinPuntos}">
+            </div>
+            <div>
+             <h2>${verLugar}</h2>
+             <h2>${verDescripcion}</h2>
+            </div>          
+          </div>         
+        `,
+        width: "950",
+        confirmButtonText: `
+           <i class="fa fa-thumbs-up" id="bot"></i> Volver
+            `,
+        showClass: {
+            popup: `
+               animate__animated
+               animate__fadeInUp
+               animate__faster
+            `
+        },
+        hideClass: {
+            popup: `
+               animate__animated
+               animate__fadeOutDown
+                animate__faster
+            `
+        }
+    });
+}
+
 
 
 /* 
@@ -112,3 +256,15 @@ function listar(riosYlagos,propiedad1,propiedad2){
     })
     return salida
 } */
+
+
+/* let contenedorDescripcion = document.getElementById("contenedorDescripcion")
+contenedorDescripcion.innerHTML = ""
+let tarjetaDescripcion = document.createElement("div")
+tarjetaDescripcion.className = "tarjetaDescripcion"
+tarjetaDescripcion.innerHTML = `        
+        <p>${lugares[lugarBuscado].lugar}</p>
+        <p>${lugares[lugarBuscado].descripcion}</p>            
+        <button>Volver</button>
+    `
+contenedorDescripcion.appendChild(tarjetaDescripcion) */

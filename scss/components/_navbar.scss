@@ -10,10 +10,12 @@
 .nav-link {
     color: $backCeleste;
     margin: 10px;
+    border-radius: 7px;
 }
 
 .navbar-nav .nav-link.active {
     color: $backCeleste;
+    border-radius: 7px;
 }
 
 
