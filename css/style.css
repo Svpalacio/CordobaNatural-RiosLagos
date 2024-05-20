@@ -70,20 +70,20 @@
 
 .accordion-button {
   width: 100%;
-  background-color: #93c6db;
+  background-color: #c5d8e0;
   margin: 15px;
 }
 
 .accordion-item:not(.active) {
-  background-color: #93c6db;
+  background-color: #c5d8e0;
 }
 
 .accordion-item .accordion-body {
-  background-color: #93c6db;
+  background-color: #c5d8e0;
 }
 
 .accordion-button.collapsed {
-  background-color: #93c6db;
+  background-color: #c5d8e0;
 }
 
 .accordion-body {
@@ -98,12 +98,18 @@ html body {
 }
 
 body {
-  background-color: #93c6db;
+  background-color: #c5d8e0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
   padding: 0px;
   margin: 0px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 main section {
@@ -136,7 +142,15 @@ main h1.animate__animated {
 
 #inputBusqueda {
   width: 200px;
-  margin: 40px 0px 40px 10px;
+  margin: 40px 10px 40px 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+#ciudades {
+  width: 200px;
+  margin: 40px 0px 40px 80px;
   border: 1px solid #ccc;
   border-radius: 7px;
   padding: 5px;
@@ -153,9 +167,34 @@ main h1.animate__animated {
 h2 {
   font-family: "Caveat", cursive;
   font-style: italic;
-  font-size: 23px;
+  font-size: 20px;
   padding: 5px;
   color: #044764;
+}
+
+h3 {
+  font-family: "Caveat", cursive;
+  font-style: italic;
+  font-size: 27px;
+  padding: 5px;
+  color: white;
+}
+
+h4 {
+  font-family: "Caveat", cursive;
+  font-style: italic;
+  font-size: 25px;
+  padding: 5px;
+  color: #044764;
+}
+
+p {
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+  font-size: 15px;
+  font-style: italic;
+  text-align: justify;
+  color: #044764;
+  padding: 5px;
 }
 
 index .col-lg-6.col-xs-12 {
@@ -169,16 +208,29 @@ index .col-lg-6.col-xs-12 {
   gap: 55px;
 }
 
+#contenedorFavorito {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 450px;
+  margin: 5px 5px 0px 5px;
+  gap: 55px;
+  margin-bottom: 20px;
+}
+
 .oculto {
   display: none !important;
 }
 
 .card {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 0px;
   width: 300px;
   height: 300px;
-  background-color: #93c6db;
+  background-color: #c5d8e0;
   border-radius: 8px;
   transition: 1000ms all;
   transform-origin: center left;
@@ -189,14 +241,41 @@ index .col-lg-6.col-xs-12 {
 
 .card img {
   width: 300px;
-  height: 300px;
+  height: 200px;
   object-fit: cover;
   border-radius: 4px;
 }
 
 .card:hover {
   cursor: pointer;
-  transform: scale(1.15);
+  transform: scale(1.1);
+}
+
+.tarjetaProductoFavorito {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  left: 0px;
+  width: 1000px;
+  height: 400px;
+  background-image: linear-gradient(to bottom, #007eb5, rgb(171, 236, 245));
+  border-radius: 8px;
+  transition: 1000ms all;
+  transform-origin: center left;
+  box-shadow: 0 5px 12px #111;
+  outline: 1px solid rgb(104, 94, 94);
+  overflow: hidden;
+  padding: 5px;
+}
+
+.tarjetaProductoFavorito img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  padding: 5px;
 }
 
 .busquedas {
@@ -214,12 +293,16 @@ index .col-lg-6.col-xs-12 {
   height: 20px;
   margin: 50px 5px;
   padding: 0px 5px 0px 5px;
+  background-color: #007eb5;
+  color: white;
 }
 
 #botonVerOcultar {
   margin: 50px 5px 50px 150px;
   padding: 5px;
-  background-color: gold;
+  background-image: linear-gradient(to bottom, #007eb5, #044764);
+  font-size: 15px;
+  width: 200px;
 }
 
 #botonBuscarPorLocalidad {
@@ -227,17 +310,31 @@ index .col-lg-6.col-xs-12 {
   height: 20px;
   margin: 50px 5px;
   padding: 0px 5px 0px 5px;
+  background-color: #007eb5;
 }
 
 button {
-  background-color: white;
-  color: #044764;
-  font-size: 12px;
+  background-color: #007eb5;
+  color: white;
+  width: 95px;
+  font-size: 11px;
   border: none;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 7px;
   padding: 0px 5px;
+}
+
+.favorito {
+  padding: 0px;
+  border: 0px;
+  width: 20px;
+  font-size: 25px;
+  background-color: #c5d8e0;
+}
+
+.favorito.favorito-agregado {
+  color: #007eb5;
 }
 
 #contenedorDescripcion {
@@ -259,6 +356,7 @@ button {
 #swal2-html-container {
   margin: 0;
   padding: 0;
+  background-image: linear-gradient(to bottom, #007eb5, rgb(171, 236, 245));
 }
 
 #contenedorAlert {
@@ -269,15 +367,17 @@ button {
   flex-wrap: wrap;
   height: 450px;
   margin: 5px 5px 0px 5px;
+  background-image: linear-gradient(to bottom, #007eb5, rgb(171, 236, 245));
 }
 
 .cardAlert {
   position: relative;
   left: 0px;
-  background-color: #93c6db;
+  background-color: #c5d8e0;
   border-radius: 8px;
   outline: 1px solid rgb(104, 94, 94);
   overflow: hidden;
+  background-image: linear-gradient(to bottom, #007eb5, rgb(171, 236, 245));
 }
 
 .cardAlert img {
@@ -286,27 +386,26 @@ button {
   object-fit: cover;
 }
 
+.swal2-center > .swal2-popup {
+  background-color: rgb(171, 236, 245);
+}
+
+button.swal2-confirm.swal2-styled {
+  font-size: 11px;
+  height: 20px;
+  width: 40px;
+  padding: 0px;
+  background-color: #007eb5;
+  border-radius: 2px;
+}
+
 .container {
   background-image: linear-gradient(to bottom, #007eb5, rgb(171, 236, 245));
   margin: 0px;
   padding: 0px;
   display: flex;
   align-items: center;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-footer .container {
-  background-image: linear-gradient(to top, #007eb5, rgb(171, 236, 245));
-  margin-top: 40px;
-}
-
-.containerFooter {
-  background-image: linear-gradient(to top, #007eb5, rgb(171, 236, 245));
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  align-items: center;
+  justify-content: center;
   max-width: 100%;
   max-height: 100%;
 }
@@ -523,31 +622,11 @@ main .localidades {
 }
 
 footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  font-family: sans-serif, Verdana, Geneva, Tahoma;
-  font-size: 15px;
-  font-style: italic;
-  color: white;
-}
-
-footer .container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100%;
-}
-
-footer .localidades {
-  position: sticky;
-  margin-top: 10px;
-}
-
-footer .destinos {
-  position: sticky;
-  margin-top: 10px;
+  justify-content: center;
+  background-image: linear-gradient(to top, #007eb5, rgb(171, 236, 245));
+  margin-top: auto;
 }
 
 @media (max-width: 600px) and (max-height: 750px) {

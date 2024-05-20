@@ -6,6 +6,9 @@ html body {
 
 body {
     background-color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
 }
 
@@ -13,8 +16,10 @@ body {
 main {
     padding: 0px;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; 
 }
-
 
 main section {
     display: flex;
@@ -37,6 +42,7 @@ main h1.animate__animated {
     color: $letraBlanca;
     text-align: center;
 }
+
 .buscar{
     display: flex;
     justify-content: right;
@@ -45,12 +51,20 @@ main h1.animate__animated {
 
 #inputBusqueda {
     width: 200px;
-    margin: 40px 0px 40px 10px;
+    margin: 40px 10px 40px 10px;
     border: 1px solid #ccc;
     border-radius: 7px;
     padding: 5px;
-  }
+ }
 
+
+ #ciudades{
+    width: 200px;
+    margin: 40px 0px 40px 80px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 5px;
+ }
   
 #inputBusquedaPorLocalidad {
     width: 200px;
@@ -63,9 +77,35 @@ main h1.animate__animated {
 h2 {
     font-family: "Caveat", cursive;
     font-style: italic;
-    font-size: 23px;
+    font-size: 20px;
     padding: 5px;
     color: $letraAzulOscuro ;
+}
+
+h3 {
+    font-family: "Caveat", cursive;
+    font-style: italic;
+    font-size: 27px;
+    padding: 5px;
+    color: $letraBlanca ;
+}
+
+
+h4 {
+    font-family: "Caveat", cursive;
+    font-style: italic;
+    font-size: 25px;
+    padding: 5px;
+    color: $letraAzulOscuro ;
+}
+
+p {
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-size: 15px;
+    font-style: italic;
+    text-align: justify;
+    color: $letraAzulOscuro;
+    padding: 5px;
 }
 
 index .col-lg-6.col-xs-12 {
@@ -79,6 +119,16 @@ index .col-lg-6.col-xs-12 {
     gap: 55px;
 }
 
+#contenedorFavorito{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 450px;
+    margin:5px 5px 0px 5px;
+    gap: 55px;
+    margin-bottom: 20px;
+}
+
 
 .oculto {
     display: none !important;
@@ -86,6 +136,9 @@ index .col-lg-6.col-xs-12 {
 
 .card{
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     left: 0px;
     width: 300px;
     height: 300px;
@@ -100,14 +153,42 @@ index .col-lg-6.col-xs-12 {
 
 .card img{
     width: 300px;
-    height: 300px;
+    height: 200px;
     object-fit: cover;
     border-radius: 4px;
 }
 
 .card:hover{
     cursor:pointer;
-    transform: scale(1.15);
+    transform: scale(1.1);
+}
+
+.tarjetaProductoFavorito{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 0px;
+    width: 1000px;
+    height: 400px;
+    background-image: linear-gradient(to bottom, $headColor , $backCeleste);
+    border-radius: 8px;
+    transition: 1000ms all;
+    transform-origin: center left;
+    box-shadow: 0 5px 12px $colorNegro;
+    outline: 1px solid $colorgris;
+    overflow: hidden;
+    padding: 5px;
+}
+
+
+.tarjetaProductoFavorito img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 .busquedas{
@@ -125,25 +206,32 @@ index .col-lg-6.col-xs-12 {
     height: 20px;
     margin: 50px 5px;
     padding: 0px 5px 0px 5px;
+    background-color: $headColor;
+    color:$letraBlanca;
 }
 
 #botonVerOcultar{
     margin:50px 5px 50px 150px;
     padding: 5px;
-    background-color:gold
+    background-image: linear-gradient(to bottom, $headColor , $letraAzulOscuro);
+    font-size: 15px;
+    width: 200px;
 }
+
 
 #botonBuscarPorLocalidad{
     width: 60px;
     height: 20px;
     margin: 50px 5px;
     padding: 0px 5px 0px 5px;
+    background-color: $headColor;
 }
 
 button{
-    background-color: $letraBlanca;
-    color: $letraAzulOscuro;
-    font-size: 12px;
+    background-color: $headColor;
+    color:$letraBlanca;
+    width: 95px;
+    font-size: 11px;
     border: none;
     cursor: pointer;
     border: 1px solid #ccc;
@@ -152,6 +240,17 @@ button{
 
 }
 
+.favorito{
+    padding: 0px;
+    border: 0px;
+    width: 20px;
+    font-size: 25px;
+    background-color: $mainColor;
+}
+
+.favorito.favorito-agregado {
+    color:$headColor; 
+  }
 
 #contenedorDescripcion {
     background-image: linear-gradient(to bottom, $headColor , $backCeleste);
@@ -172,6 +271,7 @@ button{
 #swal2-html-container{
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(to bottom, $headColor , $backCeleste);
 }
 
 #contenedorAlert{
@@ -182,6 +282,7 @@ button{
     flex-wrap: wrap;
     height: 450px;
     margin:5px 5px 0px 5px;
+    background-image: linear-gradient(to bottom, $headColor , $backCeleste);
 }
 
 .cardAlert{
@@ -191,6 +292,7 @@ button{
     border-radius: 8px;
     outline: 1px solid $colorgris;
     overflow: hidden;
+    background-image: linear-gradient(to bottom, $headColor , $backCeleste);
 }
 
 .cardAlert img{
@@ -199,30 +301,31 @@ button{
     object-fit: cover;
 }
 
+.swal2-center>.swal2-popup {
+    background-color: $backCeleste;
+}
+
+button.swal2-confirm.swal2-styled {
+    font-size: 11px;
+    height: 20px;
+    width: 40px;
+    padding: 0px;
+    background-color: $headColor;
+    border-radius: 2px;
+  }
+   
+
 .container {
     background-image: linear-gradient(to bottom, $headColor , $backCeleste);
     margin: 0px;
     padding: 0px;
     display: flex;
     align-items: center;
+    justify-content: center;
     max-width: 100%;
     max-height: 100%;
 }
 
-footer .container {
-    background-image: linear-gradient(to top, $headColor , $backCeleste);
-    margin-top: 40px;
-}
-
-.containerFooter {
-    background-image: linear-gradient(to top, $headColor , $backCeleste);
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    max-height: 100%;
-}
 
 footer p {
     font-family: sans-serif, Verdana, Geneva, Tahoma;
@@ -306,4 +409,5 @@ a {
     border: 2px solid black;
     width: 100%;
     min-height: 100px;
-}
+}  
+
