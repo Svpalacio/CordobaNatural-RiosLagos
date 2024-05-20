@@ -1,27 +1,8 @@
-footer {
-    position:relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    font-family: sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 15px;
-    font-style: italic;
-    color: $letraBlanca
-   }
-  
-  footer .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  footer .localidades{
-    position: sticky;
-    margin-top: 10px;
-  }
-  
-  footer .destinos{
-    position: sticky;
-    margin-top: 10px;
-   }
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ // flex-shrink: 0;
+   background-image: linear-gradient(to top, $headColor , $backCeleste);
+   margin-top: auto;
+}
