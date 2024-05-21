@@ -34,6 +34,8 @@ function principal(lugares) {
     let selectCiudades = document.getElementById("ciudades")
     selectCiudades.addEventListener("change", (e) => filtrarLugaresSelect(e, lugares, selectCiudades))
     
+    crearOpcionesSelect(lugares)
+
     let botonVerOcultar = document.getElementById("botonVerOcultar")
     botonVerOcultar.addEventListener("click", verOcultar)
 
@@ -45,8 +47,36 @@ function principal(lugares) {
 
 function filtrarLugaresSelect(e, lugares, selectCiudades) {
     const lugaresFiltrados = lugares.filter(lugar => lugar.localidad === selectCiudades.value)
-    crearTarjetasDeLugares(lugaresFiltrados)
-  }
+    if (lugaresFiltrados.length === 0) {
+        crearTarjetasDeLugares(lugares)
+    } else{
+        crearTarjetasDeLugares(lugaresFiltrados)
+    }    
+}
+
+function obtenerDiferentesLocalidades(riosYLagos) {
+    let localidadesDiferentes = []
+    riosYLagos.forEach(elem => {
+        if (!localidadesDiferentes.includes(elem.localidad)) {
+            localidadesDiferentes.push(elem.localidad)
+        }
+    })
+    return localidadesDiferentes
+}
+
+function crearOpcionesSelect(riosYLagos) {
+    // Genero array con las diferentes localidades
+    const localidadesDiferentes = obtenerDiferentesLocalidades(riosYLagos)
+
+    // Capturo el select para generar por cada localidad una opción dentro del mismo
+    const selectContainer = document.getElementById("ciudades")
+    localidadesDiferentes.forEach(localidad => {
+        const option = document.createElement("option")
+        option.innerText = localidad
+        selectContainer.appendChild(option)
+    })
+}
+
 
 function verOcultar(e) {
     let contenedorFavorito = document.getElementById("contenedorFavorito")
