@@ -49,8 +49,14 @@ main h1.animate__animated {
     text-align: center;
 }
 
+.filtro{
+    display: flex;
+    justify-content: center;
+}
+
 #inputBusqueda {
     width: 200px;
+    height: 40px;
     margin: 40px 10px 40px 10px;
     border: 1px solid #ccc;
     border-radius: 7px;
@@ -60,10 +66,15 @@ main h1.animate__animated {
 
  #ciudades{
     width: 200px;
-    margin: 40px 0px 40px 80px;
+    height: 40px;
+    margin: 0px;
     border: 1px solid #ccc;
     border-radius: 7px;
+    padding: 0px;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-size: 12px;
     padding: 5px;
+    margin-left: 10px;
  }
   
 #inputBusquedaPorLocalidad {
