@@ -1,4 +1,4 @@
-let lugaresRiosYlagos = [
+/* let lugaresRiosYlagos = [
     { id: 1, lugar: "Cascada Grande - La Cumbrecita", localidad: "La Cumbrecita", descripcion: "El Sendero Cascada Grande es una senda escalonada en ascenso, dentro del bosque de pinos. Tiene una extensión de 500 mts. y un desnivel positivo de 30 mts. para llegar a la vista frontal de la cascada. Se requiere buen calzado y agua. Es una linda aventura cerca del centro de La Cumbrecita y requiere de una caminata de unos 15 minutos por un sendero que trepa la sierra y permite ver hermosos paisajes. Es un lugar ideal para sentarse a descansar o darse un baño.", rutaMapa:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13549.285502742334!2d-64.78314810807916!3d-31.897864417177082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2cb22ee24bc3f%3A0x9455570e961749c!2sLa%20Cumbrecita%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1708309625861!5m2!1ses-419!2sar" , rutaImagen1: "../assets/images/cascadaGrande_LaCumbrecita.jpg", rutaImagen2: "../assets/images/masFotos/cascadaGrandeLC1.jpg", 
     rutaImagen3: "../assets/images/masFotos/cascadaGrandeLC2.jpg" },
     { id: 2, lugar: "La Olla - La Cumbrecita", localidad: "La Cumbrecita", descripcion:"La Olla se encuentra en uno de los extremos de La Cumbrecita y es uno de los lugares predilectos durante    los días de verano. El cauce de agua que baja de la sierra, va generando a su paso lugares únicos desde donde disfrutar la naturaleza en estado puro. La Olla es uno de estos lugares. En medio de un frondoso bosque de coníferas se encuentra este salto de agua que se desliza por las rocas y cae en una profunda pileta natural de más de 6 mts de profundidad." , rutaMapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13549.285502742334!2d-64.78314810807916!3d-31.897864417177082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2cb22ee24bc3f%3A0x9455570e961749c!2sLa%20Cumbrecita%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1708309625861!5m2!1ses-419!2sar", rutaImagen1: "../assets/images/laOlla_LaCumbrecita.jpg", rutaImagen2:"../assets/images/masFotos/laOlla_LaCumbrecita1.jpg", rutaImagen3:"../assets/images/masFotos/laOlla_LaCumbrecita2.jpg"},
@@ -15,14 +15,17 @@ let lugaresRiosYlagos = [
     { id: 13, lugar: "Playa Miami - Santa Rosa de Calamuchita", localidad: "Santa Rosa de Calamuchita", descripcion: "Playa Miami es un balneario entre Santa Rosa de Calamuchita y Villa Yacanto. Este lugar tiene ollitas profundas,    bancos de arena y rocas ideales para descansar. También cuenta con paradores.Ubicado en la zona conocida como Santa Mónica, Miami durante muchos años fue la meca de los jóvenes. Sin embargo, dadas sus condiciones y su belleza natural, en los últimos años también es copado por familias completas.", rutaMapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54091.33454638032!2d-64.61362140471485!3d-32.07713456588419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2bb402d25133d%3A0x69dbf019fc75788!2sSanta%20Rosa%20de%20Calamuchita%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1708312109592!5m2!1ses-419!2sar", rutaImagen1: "../assets/images/playaMiamiSantaRosa.jpg", rutaImagen2: "../assets/images/masFotos/playaMiamiSantaRosa1.jpg", rutaImagen3: "../assets/images/masFotos/playaMiamiSantaRosa2.jpg"},
     { id: 14, lugar: "Puchuqui - Santa Rosa de Calamuchita", localidad: "Santa Rosa de Calamuchita", descripcion: "Puchuqui Beach es uno de los balnearios céntricos más concurridos y visitados por los jóvenes. Su proximidad al centro de Santa Rosa de Calamuchita hace que sea de muy fácil acceso. Encontraremos tanto zonas de poca profundidad como pequeñas ollas. Además cuenta también con un bar de amplia terraza instalado justo sobre la playa… una excelente opción para tomar y comer algo con unas vistas excepcionales!", rutaMapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54091.33454638032!2d-64.61362140471485!3d-32.07713456588419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2bb402d25133d%3A0x69dbf019fc75788!2sSanta%20Rosa%20de%20Calamuchita%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1708312109592!5m2!1ses-419!2sar",rutaImagen1: "../assets/images/puchiquiSantaRosa.jpg", rutaImagen2: "../assets/images/masFotos/puchuqui1.jpeg", rutaImagen3: "../assets/images/masFotos/puchuqui2.jpg"},
     { id: 15, lugar: "Sendero Yucac - Los Reartes", localidad: "Los Reartes", descripcion: "El Sendero Yucac nos propone una caminata con dificultad baja de 1600 mts. (aproximadamente 45 minutos de ida y vuelta) hasta llegar a un balneario donde el río forma una olla profunda, pero hay que tener en cuenta que cuando el río está crecido el sendero se encuentra cerrado.", rutaMapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13544.60799963391!2d-64.60929565805051!3d-31.929630373239803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2b15e34dacc29%3A0xa8ee83ab0efaf613!2sCapilla%20Vieja%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1708312443545!5m2!1ses-419!2sar" , rutaImagen1: "../assets/images/senderoYucacCapillaVieja.jpg", rutaImagen2:"../assets/images/masFotos/senderoYucat1.jpeg", rutaImagen3: "../assets/images/masFotos/senderoYucat2.jpg"},
-    { id: 16, lugar: "Los Elefantes - Mina Clavero", localidad: "Mina Clavero", descripcion: "Sobre el cauce del río de Los Sauces se encuentran Los Elefantes, donde el agua transita la cuenca cerrada, formando rápidos y profundas ollas (sólo para expertos nadadores). Al final de los cajones, donde la cuenca se abre, surge a ambos costados una formación rocosa que se asemeja a la figura de dos elefantes, de ahí su nombre.", rutaMapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27148.16351430622!2d-65.03184171773222!3d-31.728992491608604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d25d59048c4dd%3A0xa693b3400e45cb6c!2sMina%20Clavero%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1708560319384!5m2!1ses-419!2sar", rutaImagen1: "../assets/images/elefantesMC.jpg", rutaImagen2: "../assets/images/masFotos/elefantesMC1.jpg", rutaImagen3: "../assets/images/masFotos/elefantesMC2.jpg"},
-]
+    { id: 16, lugar: "Los Elefantes - Mina Clavero", localidad: "Mina Clavero", descripcion: "Sobre el cauce del río de Los Sauces se encuentran Los Elefantes, donde el agua transita la cuenca cerrada, formando rápidos y profundas ollas (sólo para expertos nadadores). Al final de los cajones, donde la cuenca se abre, surge a ambos costados una formación rocosa que se asemeja a la figura de dos elefantes, de ahí su nombre.", rutaMapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27148.16351430622!2d-65.03184171773222!3d-31.728992491608604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d25d59048c4dd%3A0xa693b3400e45cb6c!2sMina%20Clavero%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1708560319384!5m2!1ses-419!2sar", rutaImagen1: "../assets/images/elefantesMC.jpg", rutaImagen2: "../assets/images/masFotos/elefantesMC1.jpg", rutaImagen3: "../assets/images/masFotos/elefantesMC2.jpg"}
+] */
 
 const obtenerFavoritoLS = () => JSON.parse(localStorage.getItem("favorito")) || []
 
-principal(lugaresRiosYlagos)
+principal()
 
-function principal(lugares) {
+async function principal() {
+    const response = await fetch("./data.json")
+    const lugares = await response.json()
+
     renderizarFavorito()
 
     let botonBuscar = document.getElementById("botonBuscar")
@@ -33,7 +36,7 @@ function principal(lugares) {
 
     let selectCiudades = document.getElementById("ciudades")
     selectCiudades.addEventListener("change", (e) => filtrarLugaresSelect(e, lugares, selectCiudades))
-    
+
     crearOpcionesSelect(lugares)
 
     let botonVerOcultar = document.getElementById("botonVerOcultar")
@@ -46,12 +49,13 @@ function principal(lugares) {
 }
 
 function filtrarLugaresSelect(e, lugares, selectCiudades) {
+    inputBusqueda.value = ""; // Limpiar input de búsqueda
     const lugaresFiltrados = lugares.filter(lugar => lugar.localidad === selectCiudades.value)
     if (lugaresFiltrados.length === 0) {
         crearTarjetasDeLugares(lugares)
-    } else{
+    } else {
         crearTarjetasDeLugares(lugaresFiltrados)
-    }    
+    }
 }
 
 function obtenerDiferentesLocalidades(riosYLagos) {
@@ -84,23 +88,28 @@ function verOcultar(e) {
 
     contenedorFavorito.classList.toggle("oculto")
     contenedorLugares.classList.toggle("oculto")
-    e.target.innerText = e?.target?.innerText ===  "VER FAVORITOS" ? "VER LUGARES" : "VER FAVORITOS"
+    e.target.innerText = e?.target?.innerText === "VER FAVORITOS" ? "VER LUGARES" : "VER FAVORITOS"
 }
 
 
 function filtrarYRenderizarEnter(lugares, e) {
     e.keyCode === 13 && crearTarjetasDeLugares(filtrarLugares(lugares))
+    ciudades.value = ""
 }
 
 function filtrarYRenderizar(lugares) {
     let lugaresFiltrados = filtrarLugares(lugares)
     crearTarjetasDeLugares(lugaresFiltrados)
+    ciudades.value = ""
 }
 
-
 function filtrarLugares(lugares) {
-    let inputBusqueda = document.getElementById("inputBusqueda")
-    return lugares.filter(lugar => lugar.lugar.includes(inputBusqueda.value) || lugar.localidad.includes(inputBusqueda.value))
+    const inputBusqueda = document.getElementById("inputBusqueda").value.toLowerCase();
+    return lugares.filter(lugar => {
+        const lugarMinuscula = lugar.lugar.toLowerCase();
+        const localidadMinuscula = lugar.localidad.toLowerCase();
+        return lugarMinuscula.includes(inputBusqueda) || localidadMinuscula.includes(inputBusqueda);
+    });
 }
 
 function crearTarjetasDeLugares(lugares) {
@@ -131,14 +140,14 @@ function crearTarjetasDeLugares(lugares) {
 function agregarLugarAFavoritos(e, lugares) {
     let favorito = obtenerFavoritoLS();
     let idDelLugar = Number(e.target.id.substring(13));
-  
+
     let lugFavorito = favorito.findIndex(lugar => lugar.id === idDelLugar);
     let lugarBuscado = lugares.find(lugar => lugar.id === idDelLugar);
-    
+
     if (lugFavorito !== -1) {
         let botonFavorito = document.getElementById("botonFavorito" + idDelLugar);
-        botonFavorito.classList.add("favorito-agregado"); 
-      } else {
+        botonFavorito.classList.add("favorito-agregado");
+    } else {
         let botonFavorito = document.getElementById("botonFavorito" + idDelLugar);
         botonFavorito.classList.add("favorito-agregado");
         favorito.push({
@@ -151,10 +160,10 @@ function agregarLugarAFavoritos(e, lugares) {
             rutaImagen3: lugarBuscado.rutaImagen3,
             rutaMapa: lugarBuscado.rutaMapa,
         })
-      }
+    }
     localStorage.setItem("favorito", JSON.stringify(favorito));
     renderizarFavorito();
-  }
+}
 
 
 function renderizarFavorito() {
@@ -222,30 +231,3 @@ function mostrarDescripcion(e, lugares) {
         }
     });
 }
-
-
-
-/* let localidades = []
-    riosYlagos.forEach(lug => {
-        if (!localidades.includes(lug.localidad)) {
-            localidades.push(lug.localidad)
-        }
-    })
-    let filtroLocalidad
-    do {
-        filtroLocalidad = prompt("Ingrese alguna de las siguientes Localidades (0 para Salir):\n" + localidades.join("\n"))
-        if (localidades.includes(filtroLocalidad)) {
-            let localidadesFiltradas = riosYlagos.filter((lug) => lug.localidad === filtroLocalidad)
-            alert('Los lugares destacados de la localidad "' + filtroLocalidad + '" son:\n \n' + listar(localidadesFiltradas, "id", "lugar"))
-        } else {
-            if (filtroLocalidad == 0) {
-                break
-            } else {
-                alert("Localidad incorrecta!")
-            }
-        }
-    } while (!localidades.includes(filtroLocalidad))
-
-
- */
-

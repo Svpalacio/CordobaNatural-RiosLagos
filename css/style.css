@@ -259,7 +259,7 @@ index .col-lg-6.col-xs-12 {
 
 .card:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .tarjetaProductoFavorito {
@@ -342,6 +342,7 @@ button {
   width: 20px;
   font-size: 25px;
   background-color: #c5d8e0;
+  color: white;
 }
 
 .favorito.favorito-agregado {
